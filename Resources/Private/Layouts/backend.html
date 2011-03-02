@@ -1,0 +1,36 @@
+<f:be.container>
+	<div class="typo3-fullDoc">
+		<div id="typo3-docheader">
+			<div id="typo3-docheader-row1">
+				<div class="buttonsleft">
+					
+				</div>
+				<div class="buttonsright">
+					<f:be.buttons.shortcut />
+				</div>
+			</div>
+			<div id="typo3-docheader-row2">
+				<div class="docheader-row2-left">
+					<f:be.buttons.csh />
+					<f:be.menus.actionMenu>
+						<f:be.menus.actionMenuItem label="Index" controller="Backend" action="index" />
+						<f:be.menus.actionMenuItem label="Overview" controller="Backend" action="overview" />
+					</f:be.menus.actionMenu>
+				</div>
+				<div class="docheader-row2-right">
+					<f:be.pagePath />
+					<f:be.pageInfo />
+				</div>
+			</div>
+		</div>
+		<div id="typo3-docbody">
+			<div id="typo3-inner-docbody">
+				<f:renderFlashMessages class="tx-extbase-flash-message" />
+				<f:be.container loadExtJs="true" enableExtJsDebug="true" addCssFile="{f:uri.resource(path:'Styles/backend-main.css')}" addJsFile="{f:uri.resource(path:'JavaScripts/backend-main.js')}">
+					<f:render section="content" />
+					&copy; <a href="http://www.greenbanana.ch" target="_blank">GreenBanana GmbH</a>
+				</f:be.container>
+			</div>
+		</div>
+	</div>
+</f:be.container>

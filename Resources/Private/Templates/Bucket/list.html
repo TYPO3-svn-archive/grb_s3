@@ -1,0 +1,20 @@
+<f:layout name="backend" />
+<f:section name="content">
+	<f:be.container>
+		<!-- Tree -->
+		<ul>
+			<f:for each="{treeArray}" as="node">
+				<li>{node}</li>
+			</f:for>
+		</ul>
+		
+		<f:be.tableList tableName="fe_users" />
+		
+		<!-- File Upload -->
+		<f:form action="list" controller="Bucket" enctype="multipart/form-data">
+		   <f:form.upload name="file" />
+		   <f:form.submit value="Upload File" />
+		</f:form>
+
+	</f:be.container>
+</f:section>

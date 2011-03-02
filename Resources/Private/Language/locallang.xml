@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Simple Storage extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_grbs3_domain_model_bucket">Amazon S3-Bucket</label>
+			<label index="tx_grbs3_domain_model_bucket.aws_access_key">awsAccessKey</label>
+			<label index="tx_grbs3_domain_model_bucket.aws_secret_key">awsSecretKey</label>
+		</languageKey>
+	</data>
+</T3locallang>

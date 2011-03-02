@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'grb_s3'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_grbs3_domain_model_bucket">Bucket</label>
+			<label index="tx_grbs3_domain_model_bucket.aws_access_key">Aws Access Key</label>
+			<label index="tx_grbs3_domain_model_bucket.aws_secret_key">Aws Secret Key</label>
+		</languageKey>
+	</data>
+</T3locallang>
